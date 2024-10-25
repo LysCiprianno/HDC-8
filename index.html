@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        <div class="button-group">
+            <button onclick="cadastrarFuncionarios()">Cadastrar Funcionários</button>
+            <button onclick="pesquisarFuncionario()">Pesquisar por Matrícula</button>
+            <button onclick="apresentarSalarios(1000, '>')">Salários acima de R$1.000,00</button>
+            <button onclick="apresentarSalarios(1000, '<')">Salários abaixo de R$1.000,00</button>
+            <button onclick="apresentarSalarios(1000, '=')">Salários iguais a R$1.000,00</button>
+            <button onclick="sair()">Sair</button>
+        </div>
+        <table id="tabela" class="tabela">
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Salário (R$)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-body"></tbody>
+        </table>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
